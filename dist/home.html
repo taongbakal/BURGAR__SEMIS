@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <section class="header__topbar">
+            <div class="header__topbar__wrapper">
+                    <div class="header__topbar__address">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-location-dot"></i>2/20, Astern Road, USA</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone"></i>+998556778345</a></li>
+                            <li><a href=""><i class="fa-solid fa-envelope"></i>demo@example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__topbar__socials">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="header__topbar__logo">
+                        <img src="img/burgar__logo.png" alt="">
+                    </div>
+            </div>
+        </section>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo"><img src="img/burgar__logo__light.png" alt=""></div>
+                    <div class="header__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="headerBar">
+            <div class="headerBar__wrapper">
+                <div class="headerBar__eks">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="headerBar__logo">
+                    <img src="img/burgar__logo.png" alt="">
+                </div>
+                <div class="headerBar__nav">
+                    <ul>
+                        <li><div class="title"><span>Home</span><span><i class="fa-solid fa-chevron-down"></i></span></div>
+                            <ul class="subnav">
+                                <li><a href="http://127.0.0.1:5500/dist/home.html">Home Page</a></li>
+                                <li><a href="">Landing Page</a></li>
+                                <li><a href="">Home Video Page</a></li>
+                            </ul>
+                        </li>
+                        <li>About</li>
+                        <li>Service</li>
+                        <li><div class="title"><span>Page</span><span><i class="fa-solid fa-chevron-down"></i></span></div>
+                            <ul class="subnav">
+                                <li><a href="">Team</a></li>
+                                <li><a href="http://127.0.0.1:5500/dist/faq.html">Faq</a></li>
+                                <li><div class="project"><span>Project</span><span><i class="fa-solid fa-chevron-down"></i></span></div>
+                                    <ul class="project__nav">
+                                        <li><a href="http://127.0.0.1:5500/dist/grid.html">Project Grid</a></li>
+                                        <li><a href="">Project Missionary 01</a></li>
+                                        <li><a href="">Project Missionary 02</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Testimonnial</a></li>
+                            </ul>
+                        </li>
+                        <li><div class="title"><span>Shop</span><span><i class="fa-solid fa-chevron-down"></i></span></div>
+                            <ul class="subnav">
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Cart</a></li>
+                                <li><a href="">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li><div class="title"><span>Blog</span><span><i class="fa-solid fa-chevron-down"></i></span></div>
+                            <ul class="subnav">
+                                <li><a href="">Blog Grid</a></li>
+                                <li><a href="">Blog Left Side Bar</a></li>
+                                <li><a href="">Blog Right Side Bar</a></li>
+                            </ul>
+                        </li>
+                        <li>Contact</li>
+                        <li class="icons"><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-cart-shopping"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- progress and overlay -->
+    <section class="progress"><i class="fa-solid fa-chevron-up"></i></section>
+    <section class="overlay"></section>
+
+    <!-- section -->
+    
+    <section class="home__banner">
+        <div class="home__banner__wrapper">
+            <div class="banner__slider">
+                <div class="home__banner__item">
+                    <h5 class="damion">Best Quality Burger</h5>
+                    <h1>The Best Fast Food <br>Burgar</h1>
+                    <div class="home__banner__buttons">
+                        <div class="btn1">Discover More</div>
+                        <div class="btn2">Discover Online</div>
+                    </div>
+                </div>
+                <div class="home__banner__item">
+                    <h5>Best Quality Burger</h5>
+                    <h1>The Best Fast Food <br>Burgar</h1>
+                    <div class="home__banner__buttons">
+                        <div class="btn1">Discover More</div>
+                        <div class="btn2">Discover Online</div>
+                    </div>
+                </div>
+                <div class="home__banner__item">
+                    <h5>Best Quality Burger</h5>
+                    <h1>The Best Fast Food <br>Burgar</h1>
+                    <div class="home__banner__buttons">
+                        <div class="btn1">Discover More</div>
+                        <div class="btn2">Discover Online</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <SECTION class="home__landing">
+        <div class="container">
+            <div class="home__landing__wrapper">
+                <div class="home__landing__intro">
+                    <h3>Our Burger bread healthy and ruchi rich</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, fugit in pariatur reprehenderit voluptatum quidem.</p>
+                </div>
+                <div class="home__landing__slider">
+                    <div class="home__landing__item">
+                        <img src="img/home/burger1.jpg" alt="">
+                        <div class="item__text">
+                            <h3>Burger Mania</h3>
+                            <p>Best makers gonna make patties, romaine</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="item__footer">
+                            <h4>burgar</h4>
+                            <h4>Side Dish</h4>
+                        </div>
+                    </div>
+                    <div class="home__landing__item">
+                        <img src="img/home/burger2.jpg" alt="">
+                        <div class="item__text">
+                            <h3>Friendly Burger</h3>
+                            <p>Best makers gonna make patties, romaine</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="item__footer">
+                            <h4>burgar</h4>
+                            <h4>Side Dish</h4>
+                        </div>
+                    </div>
+                    <div class="home__landing__item">
+                        <img src="img/home/burger3.jpg" alt="">
+                        <div class="item__text">
+                            <h3>Burger Buzz</h3>
+                            <p>Best makers gonna make patties, romaine</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="item__footer">
+                            <h4>burgar</h4>
+                            <h4>Side Dish</h4>
+                        </div>
+                    </div>
+                    <div class="home__landing__item">
+                        <img src="img/home/burger4.jpg" alt="">
+                        <div class="item__text">
+                            <h3>Burger 'n Bite</h3>
+                            <p>Best makers gonna make patties, romaine</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="item__footer">
+                            <h4>burgar</h4>
+                            <h4>Side Dish</h4>
+                        </div>
+                    </div>
+                    <div class="home__landing__item">
+                        <img src="img/home/burger2.jpg" alt="">
+                        <div class="item__text">
+                            <h3>Friendly burger</h3>
+                            <p>Best makers gonna make patties, romaine</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="item__footer">
+                            <h4>burgar</h4>
+                            <h4>Side Dish</h4>
+                        </div>
+                    </div>
+                    <div class="home__landing__item">
+                        <img src="img/home/burger1.jpg" alt="">
+                        <div class="item__text">
+                            <h3>Burger</h3>
+                            <p>Best makers gonna make patties, romaine</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="item__footer">
+                            <h4>burgar</h4>
+                            <h4>Side Dish</h4>
+                        </div>
+                    </div>
+                    <div class="home__landing__item">
+                        <img src="img/home/burger4.jpg" alt="">
+                        <div class="item__text">
+                            <h3>Burger Buzz</h3>
+                            <p>Best makers gonna make patties, romaine</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="item__footer">
+                            <h4>burgar</h4>
+                            <h4>Side Dish</h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </SECTION>
+    <section class="home__about">
+        <div class="container">
+            <div class="home__about__wrapper">
+            
+                <div class="image"><img src="img/home/burger__about.png" alt=""></div>
+                <div class="home__about__content">
+                    <div class="home__about__content__intro">
+                        <h4 class="damion">About Our Company</h4>
+                        <h3>Creating the best-tasting, desserts, burgar</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga mollitia possimus magnam, veniam quae repudiandae?</p>
+                    </div>
+                    <div class="home__about__content__text">
+                        <div class="flavors">
+                            <i class="fa-solid fa-burger"></i>
+                            <div class="text">
+                                <h6>Best Burgar Flavors</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus?</p>
+                            </div>
+                        </div>
+                        <div class="flavors">
+                            <i class="fa-solid fa-store"></i>
+                            <div class="text">
+                                <h6>Best Burgar Flavors</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus?</p>
+                            </div>
+                        </div>
+                        <button class="btn1">GET FREE BURRAG</button>
+                    </div>
+                </div>
+                
+                <div class="popup"><span class="years"></span><br> YEARS <br> EXPERIENCE</div>
+            
+        </div>
+        </div>
+        
+    </section>
+    <section class="home__product">
+        <div class="container">
+            <div class="home__product__wrapper">
+                <div class="home__product__title">
+                    <h2 class="damion">Our Menu Product</h2>
+                    <h3>The best Product-tasting bread, desserts, and coffee</h3>
+                </div>
+                <div class="home__product__content">
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product1.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>The Bun Jovi.</h2>
+                            <h3><strike>$120</strike> <span></span>$90</h3>
+                        </div>
+                    </div>
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product2.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>Burger N' Bite</h2>
+                            <h3>$100</h3>
+                        </div>
+                    </div>
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product3.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>The IceBurg</h2>
+                            <h3><strike>$240</strike> <span></span>$210</h3>
+                        </div>
+                    </div>
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product4.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>Grill Thrill</h2>
+                            <h3>$100</h3>
+                        </div>
+                    </div>
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product5.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>Friendly Burger</h2>
+                            <h3><strike>$140</strike> <span></span>$210</h3>
+                        </div>
+                    </div>
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product6.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>Burger Buzz</h2>
+                            <h3>$190</h3>
+                        </div>
+                    </div>
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product7.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>Chicha Burger</h2>
+                            <h3><strike>$230</strike> <span></span>$210</h3>
+                        </div>
+                    </div>
+                    <div class="home__product__content__menu">
+                        <div class="content__image">
+                            <img src="img/home/product8.jpg" alt="">
+                            <div class="sale">Sale !</div>
+                            <ul class="sub">
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li><i class="fa-regular fa-eye"></i></li>
+                            </ul>
+                        </div>
+                        <div class="content__name">
+                            <h2>The Bun Jovi.</h2>
+                            <h3>$240</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home__menu">
+        <div class="container">
+            <div class="home__menu__wrapper">
+                <div class="home__menu__title">
+                    <h2 class="damion">Our Menu Product</h2>
+                    <h3>The Menu best-tasting Burgar</h3>
+                </div>
+                <img src="img/home/menu.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="home__shipping">
+        <div class="container">
+            <div class="home__shipping__wrapper">
+                <div class="home__shipping__item">
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>Free Shipping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="home__shipping__wrarapper">
+                    <div class="home__shipping__item">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h3>Choose the Cake</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="home__shipping__wrarapper">
+                    <div class="home__shipping__item">
+                        <i class="fa-solid fa-list-check"></i>
+                        <h3>Enjoy your Sweet</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </section>
+    <section class="home__team">
+        <div class="container">
+            <div class="home__team__wrapper">
+                <div class="home__team__title">
+                    <h2 class="damion">Our Company Team</h2>
+                    <h3>Our Bakery Bread Member</h3>
+                </div>
+                <div class="home__team__slider">
+                    <div class="home__team__item">
+                        <img src="img/home/team1.jpg" alt="">
+                        <div class="name">
+                            <a href="">Kutubul Hihow</a>
+                            <span>Marketing</span>
+                        </div>
+                        <div class="socials">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="home__team__item">
+                        <img src="img/home/team2.jpg" alt="">
+                        <div class="name">
+                            <a href="">Kutubul Hihow</a>
+                            <span>Marketing</span>
+                        </div>
+                        <div class="socials">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="home__team__item">
+                        <img src="img/home/team1.jpg" alt="">
+                        <div class="name">
+                            <a href="">Kutubul Hihow</a>
+                            <span>Marketing</span>
+                        </div>
+                        <div class="socials">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="home__team__item">
+                        <img src="img/home/team2.jpg" alt="">
+                        <div class="name">
+                            <a href="">Kutubul Hihow</a>
+                            <span>Marketing</span>
+                        </div>
+                        <div class="socials">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="home__team__item">
+                        <img src="img/home/team1.jpg" alt="">
+                        <div class="name">
+                            <a href="">Kutubul Hihow</a>
+                            <span>Marketing</span>
+                        </div>
+                        <div class="socials">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home__profile">
+        <div class="container">
+            <div class="home__profile__wrapper">
+                <div class="home__profile__title">
+                    <h2 class="damion">Our Company Profile</h2>
+                    <h3>Checkout Our Best Product</h3>
+                </div>
+                <div class="home__profile__content">
+                    <div class="home__profile__content__item">
+                        <img src="img/home/portfolio1.jpg" alt="">
+                        <div class="name">
+                            <a href="">The Bon Jovi.</a>
+                            <span>Bread Dry Cake</span>
+                        </div>
+                    </div>
+                    <div class="home__profile__content__item">
+                        <img src="img/home/portfolio2.jpg" alt="">
+                        <div class="name">
+                            <a href="">Burger 'n Bite</a>
+                            <span>Bread Dry Cake</span>
+                        </div>
+                    </div>
+                    <div class="home__profile__content__item order">
+                        <a href="">Order Online</a>
+                        <p>Loremas explicabo atque porro.</p>
+                        <button class="btn1">Order Now</button>
+                    </div>
+                    <div class="home__profile__content__item">
+                        <img src="img/home/portfolio3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home__pastry">
+        <div class="container">
+            <div class="home__pastry__wrapper">
+                <div class="home__pastry__item">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <div class="text"><span class="icecream"></span>Pastryshop</div>
+                </div>
+                <div class="home__pastry__item">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <div class="text"><span class="cake"></span>Chocolate Cakes</div>
+                </div>
+                <div class="home__pastry__item">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <div class="text"><span class="chef"></span>Pastry Chefs</div>
+                </div>
+                <div class="home__pastry__item">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <div class="text"><span class="caramel"></span>Caramel Mocha</div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section class="home__testimonial">
+        <div class="container">
+            <div class="home__testimonial__wrapper">
+                <div class="home__testimonial__title">
+                    <h2 class="damion">Our Testimonials</h2>
+                    <h3>What a Client Says</h3>
+                </div>
+                <div class="home__testimonial__content">
+                    <div class="home__testimonial__content__item">
+                        <div class="profile">
+                            <img src="img/home/team1.jpg" alt="">
+                            <h2>Nahar Parvin <span>Customer</span></h2>
+                        </div>
+                        <p class="review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat similique porro ut voluptas impedit nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque?</p>
+                        <div class="stars">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <span><i>EXELLENT!!</i></span>
+                        </div>
+                    </div>
+                    <div class="home__testimonial__content__item">
+                        <div class="profile">
+                            <img src="img/home/team1.jpg" alt="">
+                            <h2>Nahar Parvin <span>Customer</span></h2>
+                        </div>
+                        <p class="review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat similique porro ut voluptas impedit nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque?</p>
+                        <div class="stars">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <span><i>EXELLENT!!</i></span>
+                        </div>
+                    </div>
+                    <div class="home__testimonial__content__item">
+                        <div class="profile">
+                            <img src="img/home/team1.jpg" alt="">
+                            <h2>Nahar Parvin <span>Customer</span></h2>
+                        </div>
+                        <p class="review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat similique porro ut voluptas impedit nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque?</p>
+                        <div class="stars">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <span><i>EXELLENT!!</i></span>
+                        </div>
+                    </div>
+                    <div class="home__testimonial__content__item">
+                        <div class="profile">
+                            <img src="img/home/team1.jpg" alt="">
+                            <h2>Nahar Parvin <span>Customer</span></h2>
+                        </div>
+                        <p class="review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat similique porro ut voluptas impedit nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque?</p>
+                        <div class="stars">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <span><i>EXELLENT!!</i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home__blog">
+        <div class="container">
+            <div class="home__blog__wrapper">
+                <div class="home__blog__title">
+                    <h2 class="damion">Our latest Blog</h2>
+                    <h3>Stay Motivated, Read The Blog</h3>
+                </div>
+                <div class="home__blog__content">
+                    <div class="home__blog__content__item">
+                        <img src="img/home/blog1.jpg" alt="">
+                        <div class="item__text">
+                            <div class="admin">
+                                <span><i class="fa-solid fa-user"></i>By Admin Burgar</span>
+                                <span><i class="fa-solid fa-clock"></i>24 Aug 2024</span>
+                            </div>
+                            <h2><a href="">Productivity tips to avoid burn out when working.</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, suscipit.</p>
+                            <button class="btn2">Read More</button>
+                        </div>   
+                    </div>
+                    <div class="home__blog__content__item">
+                        <img src="img/home/blog2.jpg" alt="">
+                        <div class="item__text">
+                            <div class="admin">
+                                <span><i class="fa-solid fa-user"></i>By Admin Burgar</span>
+                                <span><i class="fa-solid fa-clock"></i>24 Aug 2024</span>
+                            </div>
+                            <h2><a href="">Productivity tips to avoid burn out when working.</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, suscipit.</p>
+                            <button class="btn2">Read More</button>
+                        </div>
+                        
+                    </div>
+                    <div class="home__blog__content__item">
+                        <img src="img/home/blog3.jpg" alt="">
+                        <div class="item__text">
+                            <div class="admin">
+                                <span><i class="fa-solid fa-user"></i>By Admin Burgar</span>
+                                <span><i class="fa-solid fa-clock"></i>24 Aug 2024</span>
+                            </div>
+                            <h2><a href="">Productivity tips to avoid burn out when working.</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, suscipit.</p>
+                            <button class="btn2">Read More</button>
+                        </div>
+                        
+                    </div>
+                    <div class="home__blog__content__item">
+                        <img src="img/home/blog4.jpg" alt="">
+                        <div class="item__text">
+                            <div class="admin">
+                                <span><i class="fa-solid fa-user"></i>By Admin Burgar</span>
+                                <span><i class="fa-solid fa-clock"></i>24 Aug 2024</span>
+                            </div>
+                            <h2><a href="">Productivity tips to avoid burn out when working.</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, suscipit.</p>
+                            <button class="btn2">Read More</button>
+                        </div>
+                        
+                    </div>
+                    <div class="home__blog__content__item">
+                        <img src="img/home/blog2.jpg" alt="">
+                        <div class="item__text">
+                            <div class="admin">
+                                <span><i class="fa-solid fa-user"></i>By Admin Burgar</span>
+                                <span><i class="fa-solid fa-clock"></i>24 Aug 2024</span>
+                            </div>
+                            <h2><a href="">Productivity tips to avoid burn out when working.</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, suscipit.</p>
+                            <button class="btn2">Read More</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footerrrr -->
+    <section class="footer">
+        <div class="footer__layout">
+            <div style="display: flex;" class="footer__wrapper">
+                <div class="footer__address">
+                    <div class="footer__address__location">
+                        <h1>Address Us</h1>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-location-dot"></i>2/20, Astern Road, USA</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone"></i>+998556778345</a></li>
+                            <li><a href=""><i class="fa-solid fa-envelope"></i>demo@example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__address__about">
+                        <h1>About Us</h1>
+                        <ul>
+                            <li><a href="">Customers Services</a></li>
+                            <li><a href="">Department Doctor</a></li>
+                            <li><a href="">About Our Company</a></li>
+                            <li><a href="">Medical Service</a></li>
+                            <li><a href="">Make An Appointment</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__working">
+                    <div class="footer__working__post">
+                        <div class="image1">
+                            <h1>Resent Post</h1>
+                            <img src="img/grid/portfolio1.jpg" alt="">
+                            <h5>Productivity tips to avoid burn out when working.
+                                <br>April 27, 2024</h5>
+                        </div>
+                        <div class="image2">
+                            <img src="img/grid/portfolio2.jpg" alt="">
+                            <h5>Vehicula magna, a lobortis mauris vehicula sed.
+                                <br>April 27, 2024</h5>
+                        </div>
+
+                    </div>
+                    <div class="footer__working__hours">
+                        <h1>Working Hours</h1>
+                        <ul>
+                            <li><a href="">Tuesday-Friday <span>8:00 - 20:00</span></a></li>
+                            <li><a href="">Saturday<span>12:00 - 10:00</span></a></li>
+                            <li><a href="">Sunday<span>9:00 - 18:00</span></a></li>
+                            <li><a href="">Monday<span>10:00 - 10:00</span></a></li>
+                        </ul>
+                    </div>
+                </div> 
+        </div>
+        <div class="footer__copy">
+            <h5>Copyright <span><i class="fa-regular fa-copyright"></i></span>burgar all right reserved
+                <ul>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </h5>
+        </div>
+        </div>
+        
+        
+    </section>
+  
+    <script src="js/header.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/home_slider.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

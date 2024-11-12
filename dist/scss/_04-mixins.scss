@@ -1,0 +1,32 @@
+@mixin centerAll() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin centerX() {
+    display: flex;
+    justify-content: center;
+}
+@mixin centerY() {
+    display: flex;
+    align-items: center;
+}
+@mixin gridEven($cols: 1, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}
+@mixin gridUneven($cols, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: $cols;
+    grid-gap: $gap;
+}
+@mixin uncolor() {
+    filter: saturate(0%);
+    transition: 0.5s ease;
+}
+@mixin mediaQuery($width: 460px) {
+    @media screen and (min-width: $width) {
+      @content
+    }
+}
