@@ -745,6 +745,136 @@
         }
     }
 }
+.contacts {
+    &__wrapper{
+        @include mediaQuery($break-md){
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__text{
+        margin-top: 10rem;
+    }
+    &__img{
+        img{
+            display: flex;
+            align-items: center;
+            margin:0 3rem;
+            width: 47rem;;
+            height: 50rem;
+            @include mediaQuery($break-md){
+                margin:0 0 5rem 5rem;
+                height: 62rem;
+                width: 58rem;
+                margin-top: 15rem;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    &__intro{
+      margin: 2rem;
+      p{
+        font-family: "Damion", cursive;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 3rem;
+        color: $clr-primary;
+
+      }
+      h1{
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-size: 5rem;
+        font-style: normal;
+      }
+    }
+    &__question {
+      margin: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      &__card1{
+      @include mediaQuery($break-md){
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        }
+    }
+      textarea {
+        margin: 1.5rem 3rem 0;
+        padding: 2rem;
+        border: 1.5px solid rgb(203, 200, 200);
+        color: $clr-gray;
+        font-size: 1.7rem;
+        width: 47rem;
+        height: 15rem;
+        transition: border-color 0.3s ease;
+        @include mediaQuery($break-md){
+            width: 68rem;
+            margin:1rem;
+            }
+        &:focus {
+            border: 1.5px solid blue;
+            outline: none;
+            } 
+      }
+      input[type="text"],
+      input[type="number"]
+      {
+        border-radius: 0.5rem;
+        margin: 1.5rem 3rem 0;
+        padding: 2rem;
+        border: 1.5px solid rgb(203, 200, 200);
+        color: $clr-gray;
+        font-size: 1.7rem;
+        width: 47rem;
+        height: 7rem;
+        transition: border-color 0.3s ease;
+        @include mediaQuery($break-md){
+            width: 33rem;
+            margin:1rem;
+            }
+        &:focus {
+          border: 1.5px solid blue;
+          outline: none;
+        } 
+      }
+  
+      button.send-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 3rem 0;
+        padding: 3rem ;
+        background-color:($clr-primary);
+        color: white;
+        font-family: "Barlow", sans-serif;
+        font-weight: 500;
+        font-size: 2.2rem;
+        width: 47rem;
+        height: 7rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        @include mediaQuery($break-md){
+            width: 28rem;
+            height: 3rem;
+            margin:1rem;
+            }
+        &:hover {
+          background-color:rgb(248, 87, 87);
+          transition: 0.5s ease;
+        }
+  
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+   
+  }
+  
 .home__blog{
     &__wrapper{
         display: flex;
