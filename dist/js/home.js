@@ -25,7 +25,7 @@ let caramel = document.querySelector('.caramel');
 let pastrycount = false;
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 8650 && !pastrycount) {
+  if (window.scrollY >= 8850 && !pastrycount) {
     pastrycount = true;
 
     let icecreamCount = 0;

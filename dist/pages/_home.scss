@@ -45,7 +45,7 @@
             text-align: start;
             padding: 15rem;
             margin: 0;
-            
+            height: 70rem;
             h5{
                 font-size: 30px;
             }
@@ -86,7 +86,6 @@
     }
 }
 .home__about{
-    
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -111,8 +110,7 @@
             gap: 1rem;
             h4{
                 font-size: 25px;
-                color:$clr-primary;
-                
+                color:$clr-primary; 
             }
             h3{
                 @include mediaQuery($break-md){

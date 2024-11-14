@@ -124,6 +124,7 @@ p {
     text-align: start;
     padding: 15rem;
     margin: 0;
+    height: 70rem;
   }
   .home__banner__item h5 {
     font-size: 30px;
@@ -877,7 +878,6 @@ p {
 }
 
 .footer {
-  margin-top: 500rem;
   bottom: 0;
 }
 .footer__wrapper {
@@ -1222,29 +1222,29 @@ p {
     top: 13rem;
     flex-direction: column;
     transition: 0.5s ease-in-out;
-    width: 20rem;
+    width: 23rem;
     background: #ffffff;
     gap: 0.5rem;
-  }
-  .headerBar__nav ul li ul .project__nav {
-    position: absolute;
-    opacity: 1;
-    left: 5rem;
-  }
-  .headerBar__nav ul li ul .project ul {
-    max-height: 0;
-    opacity: 0;
-    position: absolute;
-    left: 5rem;
-  }
-  .headerBar__nav ul li ul .project:hover .project__nav {
-    opacity: 1;
   }
   .headerBar__nav ul li ul li {
     width: 100%;
   }
+  .headerBar__nav ul li ul .project__sub__title {
+    overflow: visible;
+  }
+  .headerBar__nav ul li ul .project__sub__title .project__nav {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    left: 5rem;
+    font-size: 15px;
+  }
+  .headerBar__nav ul li ul .project__sub__title:hover .project__nav {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
   .headerBar__nav ul li ul li:hover {
-    margin-left: 5rem;
+    margin-left: 2rem;
     transition: 0.2s ease;
   }
   .headerBar__nav ul li ul li a:hover {
@@ -1292,7 +1292,7 @@ p {
   position: absolute;
   top: 0;
   background-color: black;
-  z-index: 99;
+  z-index: 999;
   height: 10000rem;
   width: 100vw;
   opacity: 0.5;
@@ -1343,7 +1343,7 @@ p {
 }
 .header__topbar__logo {
   top: 8.5rem;
-  z-index: 9999;
+  z-index: 99;
   background-color: #ffffff;
   padding: 3rem 0 3rem 0;
   width: 100%;

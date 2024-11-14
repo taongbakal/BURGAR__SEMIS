@@ -156,6 +156,7 @@
                     background-color: $clr-accent;
                     li {
                         left: 0;
+                        
                         a:hover{
                             color: $clr-secondary;  
                             @include mediaQuery($break-md){
@@ -180,35 +181,31 @@
                         top:13rem;
                         flex-direction: column;
                         transition: 0.5s  ease-in-out;
-                        width: 20rem;
+                        width: 23rem;
                         background: $clr-light;
                         gap: 0.5rem;
-                        .project__nav{
-                            position: absolute;
-                            opacity: 1;
-                            left: 5rem;
-                           
-                         }
-                         .project{
-                            ul{
-                                max-height: 0;
+                         
+                        li {
+                            width: 100%;
+                        }
+                        .project__sub__title{
+                            overflow: visible;
+                            .project__nav{
                                 opacity: 0;
+                                transition: 0.5s ease-in-out;
                                 position: absolute;
                                 left: 5rem;
+                                font-size: 15px;
                             }
                             &:hover{
                                 .project__nav{
                                     opacity: 1;
+                                    transition: 0.5s ease-in-out;
                                 }
                             }
-                            
-                            
-                        }
-                        li {
-                            width: 100%;
                         }
                         li:hover{
-                            margin-left: 5rem;
+                            margin-left: 2rem;
                             transition: 0.2s ease;
                         }
                         li a:hover{
@@ -265,7 +262,7 @@
     position: absolute;
     top:0;
     background-color: black;
-    z-index: 99;
+    z-index: 999;
     height: 10000rem;
     width: 100vw;
     opacity: 0.5;
@@ -318,7 +315,7 @@
     }
     &__logo{
         top:8.5rem;
-        z-index: 9999;
+        z-index: 99;
         background-color: $clr-light;
         padding: 3rem 0 3rem 0;
         
