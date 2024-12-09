@@ -25,7 +25,7 @@ let caramel = document.querySelector('.caramel');
 let pastrycount = false;
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 8850 && !pastrycount) {
+  if (window.scrollY >= 4850 && !pastrycount) {
     pastrycount = true;
 
     let icecreamCount = 0;
@@ -56,4 +56,22 @@ window.addEventListener("scroll", () => {
       }
     }, 50);
   } 
+});
+
+document.querySelectorAll('.home__team__item').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const socials = item.querySelector('.socials');
+    if (socials) {
+      socials.style.opacity = '1'; 
+      socials.style.zIndex = '99999999999999'; 
+    }
+  });
+
+  item.addEventListener('mouseleave', () => {
+    const socials = item.querySelector('.socials');
+    if (socials) {
+      socials.style.opacity = '0'; 
+      socials.style.zIndex = '1'; 
+    }
+  });
 });

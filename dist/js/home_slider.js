@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nav:false,
         autoplayButton:false,
         loop:false,
+        preventScrollOnTouch: 'auto', // Avoid interfering with touch events
         responsive: {
             640: {
               edgePadding: 20,

@@ -74,6 +74,12 @@ p {
   font-style: normal;
 }
 
+.rajdhani-regular, h3, h6 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .faq_banner_wrapper {
   background: url(/dist/img/home/banner.jpeg);
   background-size: cover;
@@ -392,13 +398,16 @@ p {
   .home__about__wrapper {
     flex-direction: row;
   }
+  .home__about__wrapper img {
+    width: 55rem;
+  }
 }
 .home__about__content {
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  gap: 5rem;
+  gap: 4rem;
 }
 .home__about__content__intro {
   display: flex;
@@ -411,17 +420,19 @@ p {
 }
 @media screen and (min-width: 760px) {
   .home__about__content__intro h3 {
-    font-size: 35px;
+    font-size: 50px;
+    font-weight: 600;
   }
 }
 .home__about__content__intro p {
   color: #666;
   font-size: 15px;
+  margin: 2rem 0;
 }
 .home__about__content__text {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 @media screen and (min-width: 760px) {
   .home__about__content__text .flavors {
@@ -470,11 +481,25 @@ p {
   .home__about .popup {
     left: 10%;
     top: 20%;
+    height: 30rem;
+    width: 30rem;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
   }
 }
 .home__about .popup .years {
   font-size: 20px;
   font-weight: bold;
+}
+@media screen and (min-width: 760px) {
+  .home__about .popup .years {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 75px;
+  }
 }
 
 .home__product__wrapper {
@@ -650,6 +675,15 @@ p {
 .home__landing__intro p {
   color: #666;
 }
+.home__landing__intro h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (min-width: 760px) {
+  .home__landing__intro h3 {
+    font-size: 50px;
+  }
+}
 .home__landing__slider .home__landing__item {
   display: block;
   text-align: center;
@@ -673,9 +707,9 @@ p {
   color: #be9674;
 }
 .home__landing__slider .home__landing__item .item__footer {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .home__landing .tns-nav {
   display: flex;
@@ -768,7 +802,8 @@ p {
   gap: 2rem;
 }
 .home__team__slider .home__team__item:hover .socials {
-  z-index: 9999;
+  z-index: 9999 !important;
+  opacity: 1;
 }
 .home__team__slider .home__team__item img {
   width: 95%;
@@ -907,6 +942,7 @@ p {
   display: block;
 }
 .home__profile__content__item .name {
+  width: 100%;
   transition: 0.5s ease-in-out;
   position: absolute;
   top: 0;
@@ -915,16 +951,9 @@ p {
   flex-direction: column;
   text-align: center;
   background-color: rgba(190, 150, 116, 0.5);
-  width: 453px;
-  height: 318px;
+  height: 100%;
   align-items: center;
   justify-content: center;
-}
-@media screen and (min-width: 760px) {
-  .home__profile__content__item .name {
-    width: 580px;
-    height: 407px;
-  }
 }
 .home__profile__content__item .name a {
   color: #ffffff;
@@ -940,20 +969,15 @@ p {
   color: #ffffff;
 }
 .home__profile__content .order {
-  width: 453px;
-  height: 318px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
   gap: 1rem;
-}
-@media screen and (min-width: 760px) {
-  .home__profile__content .order {
-    width: 580px;
-    height: 407px;
-  }
+  padding: 10rem 0;
 }
 .home__profile__content .order a {
   font-size: 50px;
@@ -1041,9 +1065,14 @@ p {
   width: 100%;
   margin-top: 10rem;
 }
+.contacts__img {
+  display: flex;
+  justify-content: center;
+}
 .contacts__img img {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 3rem;
   width: 40rem;
   height: 50rem;
@@ -1075,6 +1104,7 @@ p {
   font-style: normal;
 }
 .contacts__question {
+  text-align: center;
   margin: 4rem 0;
   display: flex;
   flex-direction: column;
@@ -1082,11 +1112,17 @@ p {
   gap: 2rem;
   width: 100%;
 }
+.contacts__question__card1 {
+  text-align: center;
+}
 @media screen and (min-width: 760px) {
   .contacts__question__card1 {
     display: grid;
     grid-template-columns: 2fr 2fr;
   }
+}
+.contacts__question__card2 {
+  text-align: center;
 }
 .contacts__question textarea {
   margin: 1.5rem 3rem 0;
@@ -1133,10 +1169,12 @@ p {
   outline: none;
 }
 .contacts__question button.send-btn {
+  text-align: center;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.5rem 3rem 0;
+  margin: 1.5rem 3rem;
   padding: 3rem;
   background-color: #be9674;
   color: white;
@@ -1714,7 +1752,7 @@ p {
 @media screen and (min-width: 760px) {
   .headerBar {
     right: 0;
-    top: 10rem;
+    top: 7rem;
     position: fixed;
     width: 100vw;
     height: 10rem;
@@ -1800,10 +1838,14 @@ p {
   }
 }
 .headerBar__nav ul li {
-  font-weight: 600;
+  font-size: 19px;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   transition: 0.5s ease;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-weight: 600;
 }
 .headerBar__nav ul li:hover {
   color: #006FF9;
@@ -1903,6 +1945,11 @@ p {
     transition: 0.5s ease;
   }
 }
+.headerBar__nav ul span i {
+  color: #666;
+  margin: 0 1rem;
+  font-size: 15px;
+}
 .headerBar__nav ul .icons {
   display: none;
 }
@@ -1947,6 +1994,16 @@ p {
   flex-direction: column;
   text-align: center;
 }
+@media screen and (min-width: 760px) {
+  .header__topbar__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: unset;
+    align-items: center;
+    background-color: #be9674;
+    padding: 0.5rem 2rem;
+  }
+}
 .header__topbar__address {
   width: 100%;
   z-index: 999;
@@ -1957,12 +2014,14 @@ p {
 @media screen and (min-width: 760px) {
   .header__topbar__address {
     position: static;
+    width: unset;
   }
 }
 .header__topbar__address ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .header__topbar__address ul a {

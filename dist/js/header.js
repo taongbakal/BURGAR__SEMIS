@@ -22,7 +22,7 @@ ddowns.forEach((ddown) => {
 
 window.addEventListener("scroll", () =>   {
     console.log(scrollY);
-    if ((scrollY) >= 90 ) {
+    if ((scrollY) >= 30 ) {
       headerBar.classList.add("bg");
     } else {
       headerBar.classList.remove("bg");

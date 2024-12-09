@@ -96,6 +96,9 @@
         position: relative;
         @include mediaQuery($break-md){
             flex-direction: row;
+            img{
+                width: 55rem;
+            }
         }
     }
     &__content{
@@ -103,7 +106,7 @@
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        gap: 5rem;
+        gap: 4rem;
         &__intro{
             display: flex;
             flex-direction: column;
@@ -114,18 +117,20 @@
             }
             h3{
                 @include mediaQuery($break-md){
-                    font-size: 35px;
+                    font-size: 50px;
+                    font-weight: 600;
                 }
             }
             p{
                 color: $clr-gray;
                 font-size: 15px;
+                margin: 2rem 0;
             }
         }
         &__text{
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1rem;
             .flavors{
                 @include mediaQuery($break-md){
                     display: flex;
@@ -172,10 +177,22 @@
         @include mediaQuery($break-md){
             left: 10%;
             top: 20%;
+            height: 30rem;
+            width: 30rem;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 25px;
         }
         .years{
             font-size: 20px;
             font-weight: bold;
+            @include mediaQuery($break-md){
+                font-family: "Rajdhani", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 75px;
+            }
         }
     }
     
@@ -197,6 +214,7 @@
         h2{
             color: $clr-primary;
         }
+        
     }
     &__content{
         
@@ -350,6 +368,13 @@
         p{
             color: $clr-gray;
         }
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            @include mediaQuery($break-md){
+                font-size: 50px
+            }
+        }
     }
     &__slider{
         .home__landing__item{
@@ -374,9 +399,9 @@
                 }
             }
             .item__footer{
-                padding: 2rem 1rem;
+                padding: 1rem 1rem;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
             }
     
         }
@@ -412,6 +437,7 @@
     }
 }
 .home__team{
+    
     transition: 0.5s ease-in-out;
     &:hover{
         .tns-controls{
@@ -430,6 +456,7 @@
         position: absolute;
         opacity: 0;
         transition: 0.5s ease-in-out;
+        
         button{
             width: 2rem;
             border: none;
@@ -470,6 +497,8 @@
     }
    }
    &__slider{
+        
+    
         .home__team__item{
             position: relative;
             display: flex;
@@ -477,7 +506,8 @@
             gap: 2rem;
             &:hover{
                 .socials{
-                    z-index: 9999;
+                    z-index: 9999 !important;
+                    opacity: 1; 
                    
                 }
             }
@@ -538,6 +568,7 @@
         }
         
    }
+
 }
 .home__pastry{
     margin: 5rem 0;
@@ -618,10 +649,8 @@
                 display: block;
             }
             .name{
-                @include mediaQuery($break-md){
-                    width: 580px;
-                    height: 407px;
-                }
+                width: 100%;
+                
                 transition: 0.5s ease-in-out;
                 position: absolute;
                 top: 0;
@@ -630,8 +659,7 @@
                 flex-direction: column;
                 text-align: center;
                 background-color: rgba($clr-primary, 0.5);
-                width: 453px;
-                height: 318px;
+                height: 100%;
                 align-items: center;
                 justify-content: center;
                 a{
@@ -650,18 +678,16 @@
             }
         }
         .order{
-            width: 453px;
-            height: 318px;
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             justify-content: center;
             gap: 1rem;
-            @include mediaQuery($break-md){
-                width: 580px;
-                height: 407px;
-            }
+            padding: 10rem 0;
+            
             a{
                 font-size: 50px;
             }
@@ -755,9 +781,12 @@
         margin-top: 10rem;
     }
     &__img{
+        display: flex;
+        justify-content: center;
         img{
             display: flex;
             align-items: center;
+            justify-content: center;
             margin:0 3rem;
             width: 40rem;;
             height: 50rem;
@@ -789,19 +818,26 @@
       }
     }
     &__question {
-      margin: 4rem 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 2rem;
-      width: 100%;
+        text-align: center;
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
     &__card1{
+        text-align: center;
       @include mediaQuery($break-md){
         display: grid;
         grid-template-columns: 2fr 2fr;
         }
     }
+    &__card2{
+        text-align: center;
+      
+    }
       textarea {
+        
         margin: 1.5rem 3rem 0;
         padding: 2rem;
         border: 1.5px solid rgb(203, 200, 200);
@@ -842,10 +878,12 @@
       }
   
       button.send-btn {
+        text-align: center;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1.5rem 3rem 0;
+        margin: 1.5rem 3rem ;
         padding: 3rem ;
         background-color:($clr-primary);
         color: white;
